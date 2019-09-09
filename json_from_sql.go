@@ -73,7 +73,7 @@ func deleteBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	db, err := sql.Open("mysql", "mohammad:root@tcp(127.0.0.1:3306)/test")
+	db, err := sql.Open("mysql", "username:password@tcp(127.0.0.1:3306)/test")
 
 	if err != nil {
 		fmt.Println(err)
